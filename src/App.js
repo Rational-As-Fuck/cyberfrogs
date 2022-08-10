@@ -1,25 +1,23 @@
-import logo from './logo.svg';
+import React from 'react';
+import Container from 'react-bootstrap/Container';
+import Stack from 'react-bootstrap/Stack';
+import NavBar from './NavBar'
+import logo from './assets/images/logo.png'
+
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Container fluid className='gx-0 grad'>
+      <Stack gap={3}>
+        <div className="App">
+          <NavBar />
+        </div>
+        <div className="logo"><img src={logo} alt="Logo" /></div>
+      </Stack>
+    </Container>
   );
 }
 
 export default App;
+
