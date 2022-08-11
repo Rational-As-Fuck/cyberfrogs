@@ -2,6 +2,8 @@ import React from 'react';
 import Container from 'react-bootstrap/Container';
 import NavBar from './NavBar';
 import logo from './assets/images/logo.png';
+import staked from './assets/images/staked_nft.png';
+import unstaked from './assets/images/unstaked_nft.png';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
@@ -21,6 +23,12 @@ function App() {
         </Col>
       </Row>
       <Container className='farm'>
+        <Row>
+          <Col className="farmButtons">
+            <img src={staked} alt="staked" />
+            <img src={unstaked} alt="unstaked" />
+          </Col>
+        </Row>
         <Row className="justify-content-center nft-container">
             <Col className="pod nft">
               <img src="https://img-cdn.magiceden.dev/rs:fill:640:640:0:0/plain/https://bafybeief7hpj5elx2zpnuljnf5thyemi4mln2bsixuknjibhwkg3vajo4y.ipfs.dweb.link/2665.png?ext=png" alt="NFT"></img>
