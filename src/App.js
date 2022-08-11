@@ -20,7 +20,7 @@ function App() {
           <img src={logo} alt="Logo" />
         </Col>
       </Row>
-      <Container style={{ pt: 200 }}>>
+      <Container className='farm'>
         <Row className="justify-content-center nft-container">
             <Col className="pod nft">
               <img src="https://img-cdn.magiceden.dev/rs:fill:640:640:0:0/plain/https://bafybeief7hpj5elx2zpnuljnf5thyemi4mln2bsixuknjibhwkg3vajo4y.ipfs.dweb.link/2665.png?ext=png" alt="NFT"></img>
